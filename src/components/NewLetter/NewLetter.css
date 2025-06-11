@@ -1,0 +1,103 @@
+.newletter {
+  width: 65%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding: 0 100px; /* fixed from 'px 100px' */
+  margin-bottom: 150px;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  gap: 30px;
+  box-sizing: border-box;
+}
+
+.newletter h1 {
+  color: brown;
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.newletter p {
+  color: #454545;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.newletter div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  width: 730px;
+  max-width: 100%;
+  height: 70px;
+  border-radius: 60px;
+  border: 1px solid #e3e3e3;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.newletter input {
+  flex-grow: 1;
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 16px;
+  min-width: 0; /* prevents overflow in flexbox */
+}
+
+.newletter div button {
+  width: 210px;
+  height: 70px;
+  border-radius: 60px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  flex-shrink: 0;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 900px) {
+  .newletter {
+    width: 90%;
+    padding: 0 20px;
+    height: auto;
+  }
+
+  .newletter h1 {
+    font-size: 36px;
+  }
+
+  .newletter p {
+    font-size: 16px;
+  }
+
+  .newletter div {
+    flex-direction: column;
+    height: auto;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .newletter input {
+    margin-left: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .newletter div button {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 16px;
+  }
+}

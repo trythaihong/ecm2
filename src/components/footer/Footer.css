@@ -1,0 +1,124 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-logo img {
+  width: 60px; /* adjust as needed */
+  height: auto;
+}
+
+.footer-logo p {
+  color: black;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.footer-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 30px 50px; /* vertical and horizontal gaps */
+  color: brown;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  cursor: default;
+}
+
+.footer-link li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-link li:hover {
+  color: #a0522d; /* darker brown on hover */
+}
+
+.footer-socail-icon {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-icon-container {
+  padding: 10px 14px 6px 14px;
+  background-color: pink;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icon-container:hover {
+  background-color: #ff69b4; /* brighter pink on hover */
+}
+
+.footer-icon-container img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer-copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 30px;
+  color: #555;
+  font-size: 16px;
+}
+
+.footer-copyright hr {
+  width: 80%;
+  border: none;
+  border-radius: 10px;
+  height: 3px;
+  background-color: #c7c7c7;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 600px) {
+  .footer-link {
+    gap: 15px 30px;
+    font-size: 16px;
+  }
+  .footer-logo p {
+    font-size: 28px;
+  }
+  .footer-icon-container {
+    padding: 8px 12px 5px 12px;
+  }
+  .footer-icon-container img {
+    width: 20px;
+    height: 20px;
+  }
+  .footer {
+    gap: 30px;
+  }
+  .footer-copyright {
+    font-size: 14px;
+    max-width: 100%;
+  }
+}

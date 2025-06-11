@@ -1,0 +1,113 @@
+.offer {
+  width: 80%;
+  max-width: 1200px;
+  height: 60vh;
+  display: flex;
+  margin: 100px auto 150px auto;
+  padding: 0 140px;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+  gap: 20px;
+  flex-wrap: wrap; /* allow wrapping on small screens */
+}
+
+.offer-left {
+  flex: 1 1 400px; /* flexible but minimum 400px */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 280px;
+}
+
+.offer-left h1 {
+  color: rgb(18, 18, 18);
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.offer-left p {
+  color: #171717;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.offer-left button {
+  width: 282px;
+  max-width: 100%;
+  height: 70px;
+  border-radius: 35px;
+  border: none;
+  background-color: red;
+  color: white;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.offer-left button:hover {
+  background-color: darkred;
+}
+
+.offer-right {
+  flex: 1 1 400px; /* flexible but minimum 400px */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 60px;
+  min-width: 280px;
+}
+
+.offer-right img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 992px) {
+  .offer {
+    padding: 0 40px;
+    height: auto;
+  }
+  .offer-left h1 {
+    font-size: 32px;
+  }
+  .offer-left p {
+    font-size: 18px;
+  }
+  .offer-left button {
+    height: 60px;
+    font-size: 18px;
+    width: 220px;
+  }
+  .offer-right {
+    padding-top: 30px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .offer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+  }
+  .offer-left,
+  .offer-right {
+    flex: unset;
+    width: 100%;
+    min-width: unset;
+    padding: 0;
+    text-align: center;
+  }
+  .offer-left button {
+    width: 100%;
+    max-width: 300px;
+    margin: 30px auto 0 auto;
+  }
+}
