@@ -1,7 +1,7 @@
 import footer_logo from "../Assets/logo_big.png";
 import instragram_icon from "../Assets/instagram_icon.png";
 import pinterest_icon from "../Assets/pintester_icon.png";
-import Whatsapp_icon from "../Assets/Whatsapp_icon.png";
+import Whatsapp_icon from "../Assets/pintester_icon.png";
 import "./Footer.css";
 const Footer = () => {
   return (
