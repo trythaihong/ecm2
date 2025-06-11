@@ -6,6 +6,8 @@ import Login from "./components/Pages/Login";
 import Footer from "./components/footer/Footer";
 import Cart from "./components/Pages/Cart";
 import Popular from "./components/popular/Popular";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 const App = () => {
   return (
     <div>
